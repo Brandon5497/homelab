@@ -60,9 +60,9 @@ Results:
 - The memory error codes stopped.
 - One short beep, then a solid white power LED and quiet fans, which indicated a normal start.
 - The monitor was still blank, so I checked the display path by reseating the DisplayPort cable and trying different cables and ports.
-- The HP Startup Menu then appeared on screen.
+- The HP Startup Menu then appeared on screen after I plugged the computer into a separate display.
 
-I did not isolate which single display change fixed the blank screen. A slow first boot after the long failure may also have played a part.
+After setting up the machine, I was able to move the DisplayPort back to the first monitor and it worked.
 
 ### 6. Verification
 - **System Information (F1):** reported the full 16GB.
