@@ -4,14 +4,21 @@ A home lab built on a repurposed HP EliteDesk, used to practice virtualization, 
 
 ## Hardware
 
-![HP EliteDesk 705 G4 SFF, now running Proxmox VE](./front-view.jpg)
+<p align="center">
+  <img src="front-view.jpg" alt="Front of the HP EliteDesk" width="400"><br>
+  <em>HP EliteDesk 705 G4 SFF, now running Proxmox VE</em>
+</p>
 
+<div align="center">
+  
 | Component | Details |
-|-----------|---------|
+|--------------|------------|
 | Machine | HP EliteDesk 705 G4 SFF |
 | Memory | 16GB DDR4 |
 | Storage | 512GB NVMe SSD |
 | Network | Wired Ethernet, static IP on a home LAN |
+
+</div>
 
 ## Software
 
