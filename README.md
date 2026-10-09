@@ -4,6 +4,8 @@ A home lab built on a repurposed HP EliteDesk, used to practice virtualization, 
 
 ## Hardware
 
+![HP EliteDesk 705 G4 SFF, now running Proxmox VE](./front-view.jpg)
+
 | Component | Details |
 |-----------|---------|
 | Machine | HP EliteDesk 705 G4 SFF |
