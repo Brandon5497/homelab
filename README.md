@@ -45,3 +45,5 @@ homelab/
 ```
 
 Each lab folder has its own README with the goal, steps, problems encountered, and lessons learned, plus screenshots.
+
+***Note**: Lab write-ups were drafted with help from an AI assistant (Claude) and edited by me. All hardware work, installs, and troubleshooting were done by me on my own equipment.
