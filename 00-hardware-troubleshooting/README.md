@@ -59,6 +59,11 @@ I read the label on the stick (`PC4-2666V-UA2-11`):
 The module was the correct type, so the likely cause was a failed module.
 
 ### 5. Replacement test
+
+<p align="center">
+  <img src="screenshots/inside-case.jpg" alt="Inside the case" width="300">
+</p>
+
 I bought a new Kingston 16GB DDR4 DIMM from a reputable brand and installed it alone in slot 1, after a full power drain.
 
 Results:
