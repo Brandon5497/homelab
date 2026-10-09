@@ -57,11 +57,21 @@ Gateway and DNS stayed at the router's address. The installer showed the interfa
 - Left **automatically reboot** checked, and removed the USB when the machine restarted so it booted from the internal drive.
 
 ### 7. First login
+
+<p align="center">
+  <img src="screenshots/dashboard.png" alt="Proxmox Dashboard" width="950">
+</p>
+
 - From another computer, opened `https://192.168.1.50:8006` and logged in as `root`. The browser warned about the self-signed certificate, which is normal on a fresh install.
 - A "No valid subscription" notice appears at each login. It's only a reminder, and it doesn't limit features.
 - Confirmed SSH works with `ssh root@192.168.1.50`.
 
 ### 8. Repositories and updates
+
+<p align="center">
+  <img src="screenshots/repo.png" alt="Up-to-date" width="950">
+</p>
+
 Out of the box, Proxmox points at the paid enterprise repositories, so the first package refresh failed (it shows as a red "Update package database" task). To fix that, in **Node, Updates, Repositories**:
 1. Disabled the **pve-enterprise** repository.
 2. Disabled the **ceph enterprise** repository (I don't use Ceph on a single node).
@@ -69,6 +79,10 @@ Out of the box, Proxmox points at the paid enterprise repositories, so the first
 4. Left the two standard Debian repositories enabled, since they provide regular and security updates.
 
 Then I ran **Refresh** (succeeded) and **Upgrade**. The upgrade finished with "Your System is up-to-date" and installed a new kernel (`7.0.14-20-pve`), which needs a reboot to take effect.
+
+<p align="center">
+  <img src="screenshots/updates.png" alt="Up-to-date" width="950">
+</p>
 
 ## Problems and fixes
 
@@ -89,15 +103,3 @@ Then I ran **Refresh** (succeeded) and **Upgrade**. The upgrade finished with "Y
 ## Skills practiced
 
 Hypervisor installation, BIOS configuration, bootable media creation, checksum verification, IP planning, Linux package management (APT), remote administration over SSH and HTTPS.
-
-## Screenshots
-
-*Add these to a `screenshots/` folder and link them here:*
-- The Proxmox web interface dashboard after first login
-- The Management Network Configuration screen (hostname, IP, gateway)
-- The Repositories tab showing the no-subscription repository enabled
-- The completed upgrade output
-
-## Next
-
-[Lab 02: Ubuntu Server VM](../02-ubuntu-server-vm)
