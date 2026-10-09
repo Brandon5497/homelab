@@ -46,6 +46,11 @@ The behavior followed the memory channel pairs (1 and 3, 2 and 4) and was the sa
 HP business desktops report faults through power LED blinks: the red blinks give the category and the white blinks give the specific fault. Three red followed by two white is listed by HP as a memory error that occurs before video initializes. That also explained the blank screen, since the machine failed before it ever tried to display anything.
 
 ### 4. Ruling out a compatibility problem
+
+<p align="center">
+  <img src="screenshots/ram-label.jpg" alt="Original RAM label" width="450">
+</p>
+
 I read the label on the stick (`PC4-2666V-UA2-11`):
 - **PC4**: DDR4
 - **2666V**: DDR4-2666, supported by this machine
