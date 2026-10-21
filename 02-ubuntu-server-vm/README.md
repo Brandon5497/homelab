@@ -46,7 +46,7 @@ Started the VM and ran the installer from the Proxmox console.
 - In the VM's **Hardware** tab, set the CD/DVD drive to **Do not use any media** so the VM can't boot back into the installer.
 
 <p align="center">
-  <img src="screenshots/hardware.jpg" alt="VM hardware tab" width="450">
+  <img src="screenshots/hardware.png" alt="VM hardware tab" width="450">
 </p>
 
 ### 5. Connect over SSH
@@ -61,14 +61,14 @@ sudo apt install qemu-guest-agent -y
 Running `sudo systemctl enable --now qemu-guest-agent` printed a message that the unit has no `[Install]` section. This is expected on Ubuntu, since the service is started automatically when the VM exposes the agent channel, so there was nothing to fix. The VM's Summary page in Proxmox now shows its IP addresses, which is only possible when the agent is talking to the host, so that confirmed it works.
 
 <p align="center">
-  <img src="screenshots/summary.jpg" alt="VM summary" width="450">
+  <img src="screenshots/summary.png" alt="VM summary" width="450">
 </p>
 
 ### 7. Snapshots
 Took a snapshot of the clean install, changed the system, and rolled back. The Proxmox task history shows the **VM 100 - Rollback** task. The aim was to see how a snapshot gives me a safe way to try things and undo them.
 
 <p align="center">
-  <img src="screenshots/snapshot.jpg" alt="Snapshot of current state" width="450">
+  <img src="screenshots/snapshot.png" alt="Snapshot of current state" width="450">
 </p>
 
 ## Problems and fixes
